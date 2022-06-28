@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Monte Olivo// Aceite y Aceitunas de primer nivel</title>
+	<link rel="shortcut icon" href="../img/favicon.png">
+	<!-- css externo-->
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../css/animate.css">
+</head> 
+<body class="body">
+	<header>
+		<div class="body-div">
+			<a href="../pages/contacto.html" class="">Pedidos aqui</a>
+		</div>
+		<nav>
+			<div>
+				<a href="../index.html" class="logo">
+					MONTE OLIVOS
+				</a>
+			</div>
+			<div>
+				<ul>
+					<li>
+						<a href="../index.html">Inicio</a>
+					</li>
+					<li>
+						<a href="../pages/productos.html">Productos</a>
+					</li>
+					<li>
+						<a href="../pages/promociones.html">Promociones</a>
+					</li>
+					<li>
+						<a href="../pages/nosotros.html">Nosotros</a>
+					</li>
+					<li>
+						<a href="../pages/contacto.html">Contacto</a>
+					</li>
+				</ul>
+			</div>									
+		</nav>
+	</header>
+	<main class="contacto">
+		<h1 class="body-h1">Contacto</h1>
+		<section>
+			<form action="enviomonteolivo.php">
+				<fieldset>
+					<legend>Info personal</legend>
+				<label for="nombre">Nombre y Apellido</label>
+				<input type="text" id="nombre" placeholder="Fernando Prieto" required>
+				<label for="email">Email:</label>
+				<input type="email" id="email" placeholder="mail@mail.com" required>
+				<label for="numero">Celular:</label>
+				<input type="number" id="numero" placeholder="+54 3549 632875" required>
+				</fieldset>
+				<fieldset>
+					<legend>Info de venta</legend>
+					<label for="aceitunas">Aceituna</label>
+					<input type="checkbox" id="aceitunas" value="aceitunas">
+					<label for="aceite">Aceite</label>
+					<input type="checkbox" id="aceite" value="aceite">
+					<label for="escabeche">Escabeche</label>
+					<input type="checkbox" id="escabeche" value="escabeche">
+					<label for="dulces">Dulces</label>
+					<input type="checkbox" id="dulces" value="dulces">
+					<label for="salame">Salame</label>
+					<input type="checkbox" id="salame" value="salame">
+					<label for="aceitunarellenas">Aceitunas Rellenas</label>
+					<input type="checkbox" id="aceitunarellenas" value="aceitunarellenas">
+					<label for="alfajores">Alfajores</label>
+					<input type="checkbox" id="alfajores" value="alfajores">
+				</fieldset>
+				<fieldset>
+					<legend>Info de envio</legend>
+					<label for="local">Retiro en el local</label>
+					<input type="radio" id="local" value="local" name="envio">
+					<label for="dueno">Arreglo con el dueño</label>
+					<input type="radio" id="dueno" value="dueno" name="envio">
+					<label for="casa">Envio a mi casa</label>
+					<input type="radio" id="casa" value="casa" name="envio">
+					<label for="localidad">Provincia</label>
+					<select name="provincia" id="localidad">
+						<option value="bsas">Buenos Aires</option>
+						<option value="ciudadautonomadebsas">CABA</option>
+						<option value="catamarca">Catamarca</option>
+						<option value="chaco">Chaco</option>
+						<option value="chubut">Chubut</option>
+						<option value="cordoba">Cordoba</option>
+						<option value="corrientes">Corrientes</option>
+						<option value="entrerios">Entre Rios</option>
+						<option value="formosa">Formosa</option>
+						<option value="jujuy">Jujuy</option>
+						<option value="lapampa">La Pampa</option>
+						<option value="larioja">La Rioja</option>
+						<option value="mendoza">Mendoza</option>
+						<option value="misiones">Misiones</option>
+						<option value="neuquen">Neuquen</option>
+						<option value="rionegro">Rio Negro</option>
+						<option value="salta">Salta</option>
+						<option value="sanjuan">San Juan</option>
+						<option value="sanluis">San Luis</option>
+						<option value="santacruz">Santa Cruz</option>
+						<option value="santafe">Santa Fe</option>
+						<option value="santiagodelestero">Santiago del Estero</option>
+						<option value="tierradelfuego">Tierra del Fuego</option>
+						<option value="tucuman">Tucuman</option>	
+					</select>
+					<label for="ciudad">Ciudad</label>
+					<input type="text" id="ciudad" placeholder="Cordoba" required>
+					<label for="codigopostal">Codigo Postal</label>
+					<input type="number" id="codigopostal" placeholder="5000" required>
+					<label for="direccion">Direccion</label>
+					<input type="text" id="direccion" required>
+				</fieldset>
+		</section>
+		<div>
+			<fieldset>
+				<legend for="mensaje">Mensaje:</legend>
+				<textarea name="" id="mensaje" cols="30" rows="10" placeholder="Deja tu mensaje"></textarea>
+				<div>
+				<input type="reset" value="Cancelar">
+				<input type="submit" value="Enviar">
+				</div>
+			</fieldset>
+			</form>
+			<fieldset>
+				<legend>Horarios</legend>
+				<table border="3px" cellpadding="5px" cellspacing="5px" id="horarios">
+					<tr>
+						<th>Lun:</th>
+						<td>09:00-13:00,16:00-21:00</td>
+					</tr>
+					<tr>
+						<th>Mar:</th>
+						<td>09:00-13:00,16:00-21:00</td>
+					</tr>
+					<tr>
+						<th>Mie:</th>
+						<td>09:00-13:00,16:00-21:00</td>
+					</tr>
+					<tr>
+						<th>Jue:</th>
+						<td>09:00-13:00,16:00-21:00</td>
+					</tr>
+					<tr>
+						<th>Vie:</th>
+						<td>09:00-13:00,16:00-21:00</td>
+					</tr>
+					<tr>
+						<th>Sab:</th>
+						<td>09:00-13:00,16:00-21:00</td>
+					</tr>
+					<tr>
+						<th>Dom:</th>
+						<td>09:00-13:00,16:00-21:00</td>
+					</tr>
+				</table>
+			</fieldset>
+		</div>
+	</main>
+	<footer>
+		<div>
+		<a href="https://www.facebook.com/fernando.prieto.129" target="_blank">
+			<img src="../img/facebook.png" alt="logo de facebook en donde te redirigue a la pagina de facebook del dueño de la empresa">
+		</a>
+		<a href="https://instagram.com/ferchiprieto72?igshid=YmMyMTA2M2Y=" target="_blank">
+			<img src="../img/instagram.png" alt="logo de instagram en donde te redirigue a la pagina de instagram del dueño de la empresa">
+		</a>
+		<a href="https://wa.me/5493549632875" target="_blank">
+			<img src="../img/whatsapp.png" alt="logo de whatsapp en donde te redirigue al whatsapp del dueño de la empresa">
+		</a>
+		</div>
+		<a href="../pages/productos.html">Productos</a>
+		<a href="../pages/promociones.html">Promociones</a>
+		<a href="../pages/nosotros.html">Nosotros</a>
+		<a href="../pages/contacto.html">Contacto</a>
+		<a href="https://wa.me/5493549632875" target="_blank">Telefono</a>
+		<a href="../pages/nosotros.html#ubi">Ubicacion</a>
+		<a href="../pages/contacto.html#horarios">Horarios</a>
+	</footer>
+	<script src="../js/wow.min.js"></script>
+     <script>
+        new WOW().init();
+     </script>
+</body>
+</html>
