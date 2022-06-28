@@ -245,6 +245,8 @@ body{
 		background-color:rgba(1,161,30,1);
 		color:yellow;
 		cursor: pointer;
+		transition: background-color 2s;
+		transition: color 2s;
 	}
 	.body footer{
 		background-color: #4B4545;
