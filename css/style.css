@@ -50,7 +50,10 @@ body{
 .border-yellow{
 	border: 2px solid yellow;
 }
-
+.trans-titulo: hover{
+	transform: rotateZ(-360deg);
+	transition: transform 5s;
+}
 /*--------------------------------------Footer---------------------*/
 .body footer{
 		background-color: #4B4545;

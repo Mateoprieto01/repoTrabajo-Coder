@@ -510,6 +510,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes bounceInLeft {
@@ -2667,6 +2668,8 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .hinge {
   -webkit-animation-name: hinge;
   animation-name: hinge;
+  animation-duration: 3s;
+  animation-delay: 2s;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
