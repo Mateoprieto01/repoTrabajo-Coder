@@ -91,6 +91,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .flash {
   -webkit-animation-name: flash;
   animation-name: flash;
+  animation-duration: 2s;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
@@ -307,7 +308,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 .tada {
   -webkit-animation-name: tada;
-  animation-name: tada;
+  animation-name: tada;animation-duration: 2s;
 }
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
@@ -2006,6 +2007,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .rotateInDownLeft {
   -webkit-animation-name: rotateInDownLeft;
   animation-name: rotateInDownLeft;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes rotateInDownRight {
@@ -2051,6 +2053,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 .rotateInDownRight {
   -webkit-animation-name: rotateInDownRight;
   animation-name: rotateInDownRight;
+  animation-duration: 2s;
 }
 
 @-webkit-keyframes rotateInUpLeft {
