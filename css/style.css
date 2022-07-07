@@ -19,6 +19,9 @@ body{
 	min-height: 100%;
 	width: ;
 }
+.body{
+	font-size: 1.5rem;
+}
 /*-----------------------------Arrriba de la nav-------------------------*/
 .body-div{
 		text-decoration: none;
@@ -99,6 +102,9 @@ body{
 /*-------------------------Resoluciones----------------------------*/
 @media (min-width: 768px){
  /*-------------------------General---------------------------------*/
+	.body{
+	font-size: 2rem;
+	}
 	.body header nav{
 		background: linear-gradient(90deg, rgba(0,115,0,1) 23%, rgba(136,200,0,1) 49%, rgba(254,255,0,1) 100%);	
 	}
@@ -175,6 +181,9 @@ body{
 }
 /*-------------------------Resoluciones----------------------------*/
 @media (min-width: 1024px){
+.body{
+	font-size: 3rem;
+	}
 /*--------------------------Productos*/
 .productos section{
 	margin-top: 10px;
