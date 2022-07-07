@@ -144,6 +144,9 @@ body{
 	position: absolute;
 	bottom: 0;
 }
+.img-producto{
+	height: 250px;
+}
 /*-----------------------Nosotros-----------------------------------*/
 .nosotros p{
 	font-size: 2rem;
@@ -184,6 +187,9 @@ body{
 .promociones{
 	font-size: 2rem;
 	}
+.img-producto{
+	height: 300px;
+}
 /*-----------------------Nosotros-----------------------------------*/
 .nosotros section{
 	height: 400px;
