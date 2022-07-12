@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "nodemon": "^2.0.19",
+    "sass": "^1.53.0"
+  },
+  "name": "nodemon",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "sass --include-path scss scss/main.scss css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm     run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mateoprieto01/repoTrabajo-Coder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mateoprieto01/repoTrabajo-Coder/issues"
+  },
+  "homepage": "https://github.com/Mateoprieto01/repoTrabajo-Coder#readme",
+  "description": ""
+}

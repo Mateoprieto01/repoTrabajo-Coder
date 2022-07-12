@@ -1,0 +1,21 @@
+/*--------------------------------------Footer---------------------*/
+.body{
+    footer{
+        background-color:$gris;
+        width: $width;
+    }
+}
+.body{ 
+    footer{
+        a{
+            text-decoration:none;
+            color:$white;
+            margin:0;
+            padding:0;
+            padding-bottom:10px;
+            width:$width;
+            font-size:$size4;
+        }
+    }     
+} 
+/*--------------------------------Termina El Footer-----------------*/

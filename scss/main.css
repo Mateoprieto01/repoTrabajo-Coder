@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700&display=swap");
+html {
+  font-size: 62.5%;
+} /*-----------------------Colores de la pagina------------------------*/
+/*---------------------------Termina colores----------------------*/
+.bg-verde {
+  text-decoration: none;
+  background-color: rgb(0, 115, 0);
+  font-weight: 300;
+  color: #EAFF00;
+  font-size: 1.5rem;
+}
+.bg-verde a {
+  text-decoration: none;
+  color: #EAFF00;
+}
+.bg-verde button {
+  background-color: #EAFF00;
+}
+
+.border-yellow {
+  border: 2px solid #EAFF00;
+}
+
+.trans-titulo:hover {
+  transform: rotateZ(-360deg);
+  transition: transform 5s;
+}
+
+/*-----------------------------Arrriba de la nav-------------------------*/
+.body-div {
+  text-decoration: none;
+  background-color: #4B4545;
+  width: 100%; /*ancho*/
+  height: 100%; /*alto*/
+  border: none; /*bordes del cuadro*/
+  overflow: none; /*desbordamiento de la caja*/
+  font-size: 0.9rem; /*Tamaño de la letra}*/
+}
+
+.body-div a {
+  text-decoration: none;
+  color: #F2F2F2;
+}
+
+/*---------------------------Termina arriba nav-------------------------*/
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/*-------------------------------Fondo de pantalla----------------------*/
+body {
+  background-image: url(../img/hero2.jpeg); /*fondo de todo*/
+  background-repeat: no-repeat; /*si repite y donde*/
+  background-attachment: fixed; /*fijo o scroll el fondo*/
+  background-position: center; /*ubicacion del fondo*/
+  background-size: cover; /*tamaño del fondo*/
+  /*position: relative;*/
+  min-height: 100%;
+}
+
+.body {
+  font-size: 1.5rem;
+}
+
+/*-----------------------------Productos---------------------------*/
+.productos table {
+  border: 5px solid #EAFF00;
+}
+.productos table tr {
+  border: 1px solid #EAFF00;
+}
+
+/*-----------------------Termina Productos---------------------------*/
+/*--------------------------Promociones-----------------------------*/
+.promociones table tr {
+  border: 1px solid #EAFF00;
+}
+
+/*--------------------------Nosotros-------------------------------*/
+.nosotros {
+  width: 100%;
+}
+.nosotros p {
+  font-size: 1.5rem;
+}
+.nosotros section {
+  height: 330px;
+}
+
+/*--------------------------Contacto-------------------------------*/
+.contacto table tr {
+  border: 1px solid #EAFF00;
+}
+
+/*--------------------------------------Footer---------------------*/
+.body footer {
+  background-color: #4B4545;
+  width: 100%;
+}
+
+.body footer a {
+  text-decoration: none;
+  color: #F2F2F2;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 2rem;
+}
+
+/*--------------------------------Termina El Footer-----------------*/
+/*-------------------------Resoluciones----------------------------*/
+@media (min-width: 768px) {
+  /*-------------------------General---------------------------------*/
+  .body {
+    font-size: 2rem;
+  }
+  .body header nav {
+    background: linear-gradient(90deg, rgb(0, 115, 0) 23%, rgb(136, 200, 0) 49%, rgb(254, 255, 0) 100%);
+  }
+  .body header nav div a {
+    font-size: 4rem;
+  }
+  .body header nav div a:hover {
+    background-color: rgb(0, 115, 0);
+    color: #EAFF00;
+    cursor: pointer;
+    transition: background-color 2s;
+    transition: color 2s;
+  }
+  .body header nav ul li a {
+    color: rgb(0, 115, 0);
+    font-size: 2rem;
+  }
+  .body footer {
+    background-color: #4B4545;
+    width: 100%;
+  }
+  .body footer div a {
+    padding: 0px;
+  }
+  .body footer a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 1rem;
+  }
+  /*--------------------------Productos------------------------------*/
+  .productos footer {
+    position: absolute;
+    bottom: 0;
+  }
+  /*-----------------------Promociones-------------------------------*/
+  .promociones {
+    font-size: 1rem;
+  }
+  .promociones footer {
+    position: absolute;
+    bottom: 0;
+  }
+  .img-producto {
+    height: 250px;
+  }
+  /*-----------------------Nosotros-----------------------------------*/
+  .nosotros p {
+    font-size: 2rem;
+  }
+  .nosotros footer {
+    position: absolute;
+    bottom: 0;
+  }
+  .nosotros section {
+    height: 300px;
+  }
+  /*-----------------------Contacto----------------------------------*/
+  .contacto body div {
+    width: 100%;
+    height: 250px;
+  }
+  .contacto body div fieldset div {
+    height: 40px;
+  }
+  .contacto table {
+    font-size: 1.5rem;
+  }
+  .contacto table tr {
+    border: 1px solid #EAFF00;
+  }
+}
+/*-------------------------Resoluciones----------------------------*/
+@media (min-width: 1024px) {
+  .body {
+    font-size: 3rem;
+  }
+  /*--------------------------Productos*------------------------------*/
+  .productos section {
+    margin-top: 10px;
+  }
+  .productos table {
+    font-size: 1.5rem;
+  }
+  /*-----------------------Promociones-------------------------------*/
+  .promociones {
+    font-size: 2rem;
+  }
+  .img-producto {
+    height: 300px;
+  }
+  /*-----------------------Nosotros-----------------------------------*/
+  .nosotros section {
+    height: 400px;
+  }
+  .nosotros p {
+    font-size: 3rem;
+  }
+  /*-----------------------Contacto----------------------------------*/
+  .contacto footer {
+    position: absolute;
+    bottom: 0;
+  }
+  .contacto fieldset {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=main.css.map */

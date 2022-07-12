@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&family=Roboto:ital,wght@1,100;1,300;1,400;1,500;1,700&display=swap");
+.bg-verde {
+  text-decoration: none;
+  background-color: rgb(0, 115, 0);
+  color: #EAFF00;
+  font-weight: 300;
+}
+.bg-verde a {
+  text-decoration: none;
+  color: #EAFF00;
+}
+.bg-verde button {
+  background-color: #EAFF00;
+}
+
+.border-yellow {
+  border: 2px solid #EAFF00;
+}
+
+.trans-titulo:hover {
+  transform: rotateZ(-360deg);
+  transition: transform 5s;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-bottom: 2em;
+}
+
+code {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+h3 {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.card {
+  height: 500px;
+}/*# sourceMappingURL=main.css.map */

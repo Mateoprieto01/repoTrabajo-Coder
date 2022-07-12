@@ -1,0 +1,54 @@
+*{
+	font-family:'Roboto', sans-serif;
+	padding:0;
+	margin:0;
+}
+/*-------------------------------Fondo de pantalla----------------------*/
+body{
+	background-image: url(../img/hero2.jpeg);/*fondo de todo*/
+	background-repeat:no-repeat; /*si repite y donde*/
+	background-attachment:fixed; /*fijo o scroll el fondo*/
+	background-position:center;/*ubicacion del fondo*/
+	background-size:cover; /*tamaño del fondo*/
+	/*position: relative;*/
+	min-height: 100%;
+}
+.body{
+	font-size:$size3;
+}
+/*-----------------------------Productos---------------------------*/
+.productos {
+	table{
+		border:5px solid $yellow;
+		tr{
+			border:1px solid $yellow;
+		}
+	}
+}
+/*-----------------------Termina Productos---------------------------*/
+/*--------------------------Promociones-----------------------------*/
+.promociones{
+	table{
+		tr{
+			border:1px solid $yellow;
+		} 
+	}
+} 
+/*--------------------------Nosotros-------------------------------*/
+.nosotros{
+	width:$width;
+	p{
+		font-size:$size3;
+	}
+	section{
+		height: 330px;
+	}
+}
+/*--------------------------Contacto-------------------------------*/
+.contacto{
+	table{
+		tr{
+			border:1px solid $yellow;
+		}
+	}
+} 

@@ -1,0 +1,141 @@
+/*-------------------------Resoluciones----------------------------*/
+@media (min-width: 768px){
+    /*-------------------------General---------------------------------*/
+    .body{
+        font-size: 2rem;
+        header{
+            nav{
+                background:$degrades;
+                div{
+                    a{
+                        font-size:$size8;
+                        &:hover{
+                            background-color:$main-green;
+                            color:$yellow;
+                            cursor: pointer;
+                            transition: background-color 2s;
+                            transition: color 2s;
+                        } 
+                    }
+                }
+                ul{
+                    li{
+                        a{
+                            color:$main-green;
+                            font-size:$size4; 
+                        }
+                    }
+                } 
+            }
+        }
+        footer{
+            background-color:$gris;
+            width:$width;
+            div{
+                a{
+                    padding: 0px;
+                }
+            }
+            a{
+                @include d-flex(center, center);
+                justify-items: center;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                font-size:$size2;
+            }
+        }
+    }
+/*--------------------------Productos------------------------------*/
+    .productos{
+        footer{
+            position: absolute;
+            bottom: 0;
+        }
+    } 
+/*-----------------------Promociones-------------------------------*/
+    .promociones{
+        font-size:$size2;
+        footer{
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    .img-producto{
+        height: 250px;
+    }
+/*-----------------------Nosotros-----------------------------------*/
+    .nosotros{
+        p{
+            font-size:$size4;
+        }
+        footer{
+            position: absolute;
+            bottom: 0;
+        }
+        section{
+            height: 300px;
+        }
+    } 
+
+/*-----------------------Contacto----------------------------------*/
+    .contacto{
+        body{
+            div{
+                width:$width;
+                height: 250px;
+                fieldset{
+                    div{
+                        height: 40px;
+                    }
+                }
+            }
+        }
+        table{
+            font-size:$size3;
+            tr{
+                border:1px solid $yellow;
+            }
+        }
+    } 
+}
+/*-------------------------Resoluciones----------------------------*/
+@media (min-width: 1024px){
+    .body{
+        font-size:$size6;
+        }
+    /*--------------------------Productos*------------------------------*/
+    .productos{
+        section{
+            margin-top: 10px;
+        }
+        table{
+            font-size:$size3;
+        }
+    } 
+    /*-----------------------Promociones-------------------------------*/
+    .promociones{
+        font-size:$size4;
+        }
+    .img-producto{
+        height: 300px;
+    }
+    /*-----------------------Nosotros-----------------------------------*/
+    .nosotros{
+        section{
+            height: 400px;
+        }
+        p{
+            font-size:$size6;
+        }
+    } 
+    /*-----------------------Contacto----------------------------------*/
+    .contacto{
+        footer{
+            position: absolute;
+            bottom: 0;
+        }
+        fieldset{
+            font-size:$size2;
+        }
+    } 
+}
