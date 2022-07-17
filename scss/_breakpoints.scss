@@ -55,10 +55,10 @@
 /*-----------------------Promociones-------------------------------*/
     .promociones{
         font-size:$size2;
-        footer{
+        /*footer{
             position: absolute;
             bottom: 0;
-        }
+        }*/
     }
     .img-producto{
         height: 250px;
@@ -115,6 +115,10 @@
     /*-----------------------Promociones-------------------------------*/
     .promociones{
         font-size:$size4;
+        footer{
+            position: absolute;
+            bottom: 0;
+        }
         }
     .img-producto{
         height: 300px;

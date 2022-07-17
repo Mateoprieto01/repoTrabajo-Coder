@@ -76,8 +76,10 @@ body {
 
 /*-----------------------Termina Productos---------------------------*/
 /*--------------------------Promociones-----------------------------*/
-.promociones table tr {
-  border: 1px solid #EAFF00;
+.promociones #carousel123 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 /*--------------------------Nosotros-------------------------------*/
@@ -160,10 +162,10 @@ body {
   /*-----------------------Promociones-------------------------------*/
   .promociones {
     font-size: 1rem;
-  }
-  .promociones footer {
-    position: absolute;
-    bottom: 0;
+    /*footer{
+        position: absolute;
+        bottom: 0;
+    }*/
   }
   .img-producto {
     height: 250px;
@@ -209,6 +211,10 @@ body {
   /*-----------------------Promociones-------------------------------*/
   .promociones {
     font-size: 2rem;
+  }
+  .promociones footer {
+    position: absolute;
+    bottom: 0;
   }
   .img-producto {
     height: 300px;

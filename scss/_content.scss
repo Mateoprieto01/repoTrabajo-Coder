@@ -27,12 +27,8 @@ body{
 }
 /*-----------------------Termina Productos---------------------------*/
 /*--------------------------Promociones-----------------------------*/
-.promociones{
-	table{
-		tr{
-			border:1px solid $yellow;
-		} 
-	}
+.promociones #carousel123{
+	@include d-flex(space-evenly, center);
 } 
 /*--------------------------Nosotros-------------------------------*/
 .nosotros{
