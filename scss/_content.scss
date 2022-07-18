@@ -28,6 +28,7 @@ body{
 /*--------------------------Promociones-----------------------------*/
 .promociones #carousel123{
 	@include d-flex(space-evenly, center);
+	padding-top: 25px;
 } 
 /*--------------------------Nosotros-------------------------------*/
 .nosotros{

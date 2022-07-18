@@ -79,6 +79,7 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-top: 25px;
 }
 
 /*--------------------------Nosotros-------------------------------*/
@@ -155,8 +156,7 @@ body {
   }
   /*--------------------------Productos------------------------------*/
   .productos footer {
-    position: absolute;
-    bottom: 0;
+    position: relative;
   }
   /*-----------------------Promociones-------------------------------*/
   .promociones {
@@ -202,6 +202,10 @@ body {
   }
   .productos table {
     font-size: 1.5rem;
+  }
+  .productos footer {
+    position: absolute;
+    bottom: 0;
   }
   /*-----------------------Promociones-------------------------------*/
   .promociones {
