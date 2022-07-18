@@ -8,7 +8,7 @@
                 background:$degrades;
                 div{
                     a{
-                        font-size:$size8;
+                        font-size:map-get($map: $ta-letra, $key:"size8");
                         &:hover{
                             background-color:$main-green;
                             color:$yellow;
@@ -22,7 +22,7 @@
                     li{
                         a{
                             color:$main-green;
-                            font-size:$size4; 
+                            font-size:map-get($map: $ta-letra, $key:"size4"); 
                         }
                     }
                 } 
@@ -41,7 +41,7 @@
                 justify-items: center;
                 padding-top: 20px;
                 padding-bottom: 20px;
-                font-size:$size2;
+                font-size:map-get($map: $ta-letra, $key:"size2");
             }
         }
     }
@@ -54,11 +54,7 @@
     } 
 /*-----------------------Promociones-------------------------------*/
     .promociones{
-        font-size:$size2;
-        /*footer{
-            position: absolute;
-            bottom: 0;
-        }*/
+        font-size:map-get($map: $ta-letra, $key:"size2");
     }
     .img-producto{
         height: 250px;
@@ -66,7 +62,7 @@
 /*-----------------------Nosotros-----------------------------------*/
     .nosotros{
         p{
-            font-size:$size4;
+            font-size:map-get($map: $ta-letra, $key:"size4");
         }
         footer{
             position: absolute;
@@ -91,7 +87,7 @@
             }
         }
         table{
-            font-size:$size3;
+            font-size:map-get($map: $ta-letra, $key:"size3");
             tr{
                 border:1px solid $yellow;
             }
@@ -101,7 +97,7 @@
 /*-------------------------Resoluciones----------------------------*/
 @media (min-width: 1024px){
     .body{
-        font-size:$size6;
+        font-size:map-get($map: $ta-letra, $key:"size6");
         }
     /*--------------------------Productos*------------------------------*/
     .productos{
@@ -109,12 +105,12 @@
             margin-top: 10px;
         }
         table{
-            font-size:$size3;
+            font-size:map-get($map: $ta-letra, $key:"size3");
         }
     } 
     /*-----------------------Promociones-------------------------------*/
     .promociones{
-        font-size:$size4;
+        font-size:map-get($map: $ta-letra, $key:"size4");
         footer{
             position: absolute;
             bottom: 0;
@@ -129,7 +125,7 @@
             height: 400px;
         }
         p{
-            font-size:$size6;
+            font-size:map-get($map: $ta-letra, $key:"size6");
         }
     } 
     /*-----------------------Contacto----------------------------------*/
@@ -139,7 +135,7 @@
             bottom: 0;
         }
         fieldset{
-            font-size:$size2;
+            font-size:map-get($map: $ta-letra, $key:"size2");
         }
     } 
 }

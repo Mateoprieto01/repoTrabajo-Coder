@@ -1,8 +1,20 @@
+//maps
+//Tamaño letras
+$ta-letra:(
+    "size1" : 0.9rem,
+    "size2" : 1rem,
+    "size3" : 1.5rem,
+    "size4" : 2rem,
+    "size5" : 2.5rem,
+    "size6" : 3rem,
+    "size7" : 3.5rem,
+    "size8" : 4rem,
+);
 //mixins
-@mixin texto($font, $color, $size){
+@mixin texto($font, $color, $sizefont){
     font-weight:$font;
     color:$color;
-    font-size:$size;
+    font-size:$sizefont;
 }
 @mixin d-flex($justify, $align){
     display:flex;
@@ -14,7 +26,7 @@
 .bg-verde{
     text-decoration:none;
 	background-color:$main-green;
-	@include texto($fontSM, $yellow, $size3);
+	@include texto($fontSM, $yellow, map-get($map: $ta-letra, $key:"size3"));
     a{
         text-decoration:none;
 	    color:$yellow;
@@ -32,48 +44,6 @@
 	    transition: transform 5s;
     }	
 }
-
-//maps
-
-
-// math
-// .box{
-// 	width: ($width - 2%) / 4;
-// 	height: $height - 2vh;
-// 	background-color: grey;
-// }
-
-// condicionales 
-// .icon-lang{
-// 	width: 50px;
-// 	height: 50px;
-// 	background-size:contain;
-// 	background-position:center;
-// 	@if $lang==es{background-image: url(../img/icono-es.jpg)}
-// 	@else if $lang==en{background: url(../img/icono-en.jpg)}
-// 	@else if $lang==fr{background: url(../img/icono-fr.jpg)}
-// 	@else{background: url(../img/icono-any.jpg)};
-// }
-
-// bucles
-// @for $i from 1 through 6{
-// 	.text-#{$i}{
-// 		font-size: .25em *$i;
-// 	}
-// }
-
-// bucle evolucionado
-// @each $icono in facebook, twitter, instagram{
-// 	.#{$icono}-icon{
-// 		background-image:url(../img/#{$icono}.svg);
-// 		width: 30px;
-// 		height: 30px;
-// 		background-size:100%;
-// 		list-style: none;
-// 		margin-right: 6px;
-// 	}
-// }
-
 
 
 

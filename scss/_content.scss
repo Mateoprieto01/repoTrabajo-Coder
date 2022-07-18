@@ -14,7 +14,7 @@ body{
 	min-height: 100%;
 }
 .body{
-	font-size:$size3;
+	font-size:map-get($map: $ta-letra, $key: "size3");
 }
 /*-----------------------------Productos---------------------------*/
 .productos {
@@ -34,7 +34,7 @@ body{
 .nosotros{
 	width:$width;
 	p{
-		font-size:$size3;
+		font-size:map-get($map: $ta-letra, $key:"size3");
 	}
 	section{
 		height: 330px;

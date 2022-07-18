@@ -6,7 +6,7 @@
     height:100%; /*alto*/
     border:none;/*bordes del cuadro*/
     overflow:none;/*desbordamiento de la caja*/
-    font-size:$size1;/*Tamaño de la letra}*/
+    font-size:map-get($map: $ta-letra, $key:"size1");/*Tamaño de la letra}*/
 }
 .body-div a{
     text-decoration:none;
