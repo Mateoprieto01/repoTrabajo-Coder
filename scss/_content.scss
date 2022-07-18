@@ -5,12 +5,11 @@
 }
 /*-------------------------------Fondo de pantalla----------------------*/
 body{
-	background-image: url(../img/hero2.jpeg);/*fondo de todo*/
-	background-repeat:no-repeat; /*si repite y donde*/
-	background-attachment:fixed; /*fijo o scroll el fondo*/
-	background-position:center;/*ubicacion del fondo*/
-	background-size:cover; /*tamaño del fondo*/
-	/*position: relative;*/
+	background-image: url(../img/hero2.jpeg);
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position:center;
+	background-size:cover;
 	min-height: 100%;
 }
 .body{
