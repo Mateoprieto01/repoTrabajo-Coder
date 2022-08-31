@@ -362,4 +362,262 @@ let producto = function (a, b) {
 let resultado = producto(3, 6)
 console.log(resultado)
 */
+//crud
+// create - read - update - delete
+const nombre = "Monitor de 24 pulgadas"
+const precio = 500
+const disponible = true
+console.log(disponible)///////
+
+const producto = {
+    nombre : "Monitor de 24 pulgadas",
+    precio : 500,
+    disponible : true
+}
+//producto.imagen = "imagen.jpeg" //create
+//delete producto.disponible //delete
+//destructuring
+const {nombre, precio, disponible}= producto
+producto.disponible = false //update
+console.log(producto) //read
+
+//objet constructor
+//importante
+function Producto(nombre, precio) {
+    this.nombre = nombre
+    this.precio = precio 
+    this.disponible = true
+}
+const producto2 = new Producto ("teclado", 1000)
+const producto3 = new Producto ("microfono", 2000)
+console.log(producto2, producto3)
+//importante
+//metodos por defecto
+let cadena = "HOLA ALUMNOS"
+console.log(cadena.toLowerCase())
+let cadena1 = "HOLA ALUMNOS"
+console.log(cadena1.length)
+let text = "manzana, banana, kiwi"
+let newText = text.replace("manzana", "pera")
+console.log(newText) 
+//metodos personalizados
+
+function clientes(nombre, edad, domicilio) {
+    this.nombre = nombre
+    this.edad = edad
+    this.domicilio = domicilio 
+    this.saludar = function () {
+        console.log("Saludos " + this.nombre +" "+ this.edad)
+    }
+}
+const cliente1 = new clientes("coder",26,"marcelo t alvear")
+const cliente2 = new clientes("mateo",20,"marcelo t alvear")
+
+cliente1.saludar()
+cliente2.saludar()
+//declaraciones de clases
+
+class Cliente{
+    constructor(nombre, acceso){
+        this.nombre = nombre
+        this.acceso = acceso
+    }
+}
+const coderhouse = new Cliente("coder", "accepted")
+console.log(coderhouse)
+//metodos
+class usuario{
+    constructor(nombre, acceso){
+        this.nombre = nombre
+        this.acceso = acceso
+    }
+    mostrarinfodeacceso(){
+        return `usuario ${this.nombre}, tu acceso es ${this.acceso}`
+    }
+}
+const coderhouse = new usuario ("mateo", "aceptada")
+console.log(coderhouse.mostrarinfodeacceso())
+*/
+/*
+let numero = Number(prompt("Ingrese un numero"))
+
+for (let i = 1; i <= 10; i++) {
+    let tabla = numero ** i
+    alert(`${numero} x ${i} = ${tabla}`)
+}
+//crud
+// create - read - update - delete
+const nombre = "Monitor de 24 pulgadas"
+const precio = 500
+const disponible = true
+console.log(disponible)///////
+
+const producto = {
+    nombre : "Monitor de 24 pulgadas",
+    precio : 500,
+    disponible : true
+}
+//producto.imagen = "imagen.jpeg" //create
+//delete producto.disponible //delete
+//destructuring
+const {nombre, precio, disponible}= producto
+producto.disponible = false //update
+console.log(producto) //read
+
+//objet constructor
+//importante
+function Producto(nombre, precio) {
+    this.nombre = nombre
+    this.precio = precio 
+    this.disponible = true
+}
+const producto2 = new Producto ("teclado", 1000)
+const producto3 = new Producto ("microfono", 2000)
+console.log(producto2, producto3)
+//importante
+//metodos por defecto
+let cadena = "HOLA ALUMNOS"
+console.log(cadena.toLowerCase())
+let cadena1 = "HOLA ALUMNOS"
+console.log(cadena1.length)
+let text = "manzana, banana, kiwi"
+let newText = text.replace("manzana", "pera")
+console.log(newText) 
+//metodos personalizados
+
+function clientes(nombre, edad, domicilio) {
+    this.nombre = nombre
+    this.edad = edad
+    this.domicilio = domicilio 
+    this.saludar = function () {
+        console.log("Saludos " + this.nombre +" "+ this.edad)
+    }
+}
+const cliente1 = new clientes("coder",26,"marcelo t alvear")
+const cliente2 = new clientes("mateo",20,"marcelo t alvear")
+
+cliente1.saludar()
+cliente2.saludar()
+//declaraciones de clases
+
+class Cliente{
+    constructor(nombre, acceso){
+        this.nombre = nombre
+        this.acceso = acceso
+    }
+}
+const coderhouse = new Cliente("coder", "accepted")
+console.log(coderhouse)
+//metodos
+class usuario{
+    constructor(nombre, acceso){
+        this.nombre = nombre
+        this.acceso = acceso
+    }
+    mostrarinfodeacceso(){
+        return `usuario ${this.nombre}, tu acceso es ${this.acceso}`
+    }
+}
+const coderhouse = new usuario ("mateo", "aceptada")
+console.log(coderhouse.mostrarinfodeacceso())
+*/
+//Arrays
+/*
+const numero = [1, 2, 3, 4, 5, 6]
+for (let i = 0; i <5; i++) {
+    alert(numero[i])
+}
+console.log(arrayA.length)
+const arrayA = ["marca", 3, "palabra"]
+//Metodos
+//Agregar valores
+arrayA.push("otro elemento")
+//AGREGAR ELEMENTOS AL PRINCIPIO DEL ARRAY
+arrayA.unshift("otro elemento mas")
+console.log(arrayA)
+
+//Eliminar elementos
+const nombre = ["mateo","laura"]
+//nombre.pop() elimina el ultimo
+//nombre.shift() elmina el primero
+console.log(nombre)
+
+//splice
+const nombre = ["mateo", "coder", "laura", "fernando"]
+nombre.splice(0, 3)
+console.log(nombre)
+
+//concat
+const alumnos = ["ale", "sala", "cristian"]
+const tutores = ["dario", "rodrigo"]
+const presentes = alumnos.concat(tutores)
+console.log(presentes)
+
+//join
+const alumnos = ["ale", "sala", "cristian"]
+const presentes = alumnos.join("++")
+console.log(presentes)
+
+//slice
+const nombres = ["ale", "sala", "cristian", "mateo", "cesar"]
+const masculinos = nombres.slice(1, 3)
+console.log(masculinos)
+
+//indexOf
+const nombres = ["ale", "sala", "laura", "mateo", "maria"]
+console.log(nombres.indexOf("laura"))
+console.log(nombres.indexOf("roberto")) //no existe -1
+
+//Includes
+const nombres = ["ale", "sala", "laura", "mateo", "maria"]
+console.log(nombres.includes("mateo"))
+
+//Revers
+const nombres = ["ale", "sala", "laura", "mateo", "maria"]
+nombres.reverse()
+console.log(nombres)
+
+//Ejemplos cargar datos y almacenar en un array
+const listaNombres = []
+let cantidad = 5
+do {
+    let entrada = prompt("ingrese el nombre")
+    listaNombres.push(entrada.toUpperCase())
+    console.log(listaNombres.length)
+} while (listaNombres.length != cantidad);
+const nuevaLista = listaNombres.concat(["ANA", "EMA"])
+alert(nuevaLista.join("\n"))
+
+//eliminar datos de un array
+const nombres = ["ale", "sala", "laura", "mateo", "maria"]
+const eliminar = (nombre) => {
+    let i = nombres.indexOf(nombre)
+    if(i != -1){
+        nombres.splice(i, 1)
+    }
+}
+eliminar("laura")
+console.log(nombres)
+
+//
+const objeto1 = {id: 1, producto: "arroz"}
+const array = [objeto1, {id:2, producto:"fideos"}]
+array.push({id: 3, producto: "pan"})
+console.log(array)
+
+//
+const productos = [
+    {id: 1, producto: "arroz", precio: 50},
+    {id: 2, producto: "fideos", precio:100},
+    {id: 3, producto: "pan", precio:200},
+]
+for(const producto of productos){
+    console.log(producto.id)
+    console.log(producto.producto)
+    console.log(producto.precio)
+}
+*/
+
+
+
 
