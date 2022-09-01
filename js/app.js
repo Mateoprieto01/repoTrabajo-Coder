@@ -1,10 +1,38 @@
-const suma  = (a,b) => a + b
-const resta = (a,b) => a - b
-let precio  = Number(prompt("ingrese precio del producto"))
-let descuento = Number(prompt("ingrese el descuento"))
-const iva   = precio * 0.19
-let nuevoPrecio = resta(suma(precio, iva), descuento) 
-console.log("El precio del producto con iva mas el descuento es:", nuevoPrecio)
+function Formulario() {
+    console.log("Iniciando formulario...")
+}
+function usuarioAutenticado() {
+    console.log("autenticando")
+    console.log("usuario autenticado exitoso")
+}
+Formulario()
+let nombre = prompt("Ingrese su nombre o poner ESC para interrumpir");
+let texto = " ";
+while (nombre != "ESC" && nombre != "esc") {
+    texto += nombre + " ";
+    nombre = prompt("Ingrese un nombre o poner ESC para interrumpir");
+}
+alert(texto);
+console.log(texto)
+
+let edad = prompt("Ingrese su edad y domicilio o poner ESC para interrumpir");
+let texto1 = " ";
+while (edad != "ESC" && edad != "esc") {
+    texto1 += edad + " ";
+    edad = prompt("Ingrese su edad y domicilio o poner ESC para interrumpir");
+}
+alert(texto + " " +texto1);
+console.log(texto1)
+
+usuarioAutenticado()
+
+
+
+
+
+
+
+
 
 
 
