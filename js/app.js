@@ -25,28 +25,13 @@ alert(texto + " " +texto1);
 console.log(texto1)
 usuarioAutenticado()
 
-const producto1 = {
-    nombre: "Aceite",
-    precio: 1000,
-    disponible: true,
-};
-const producto2 = {
-    nombre: "Aceitunas",
-    precio: 250,
-    disponible: true,
-};
-const producto3 = {
-    nombre: "Escabeches",
-    precio: 600,
-    disponible: true,
-};
-const producto4 = {
-    nombre: "Salame",
-    precio: 700,
-    disponible: true,
-};
 
-const producto = [producto1, producto2, producto3, producto4]
+const producto = [
+    {nombre: "Aceite", precio: 1000, disponible: true,},
+    {nombre: "Aceitunas", precio: 250, disponible: true,},
+    {nombre: "Escabeches", precio: 600, disponible: true,},
+    {nombre: "Salame", precio: 700, disponible: true}
+]
 let option = prompt(`Elija una opcion:
 1: Aceite
 2: Aceitunas
@@ -55,67 +40,18 @@ let option = prompt(`Elija una opcion:
 `)
 switch (option) {
     case "1":
-        console.log(producto1)
+        console.log(`El producto es ${producto[0].nombre} y su precio es ${producto[0].precio}`)
         break;
     case "2":
-        console.log(producto2)
+        console.log(`El producto es ${producto[1].nombre} y su precio es ${producto[1].precio}`)
         break;
     case "3":
-        console.log(producto3)
+        console.log(`El producto es ${producto[2].nombre} y su precio es ${producto[2].precio}`)
         break;
     case "4":
-        console.log(producto4)
+        console.log(`El producto es ${producto[3].nombre} y su precio es ${producto[3].precio}`)
         break;    
     default:
         alert("No ingresaste una opcion valida")
         break;
 }
-
-
-
-
-
-
-
-/* const producto1 = {
-    nombre: "Aceite",
-    precio: 1000,
-    disponible: true,
-};
-const producto2 = {
-    nombre: "Aceitunas",
-    precio: 250,
-    disponible: true,
-};
-const producto3 = {
-    nombre: "Escabeches",
-    precio: 600,
-    disponible: true,
-};
-const producto4 = {
-    nombre: "Salame",
-    precio: 700,
-    disponible: true,
-}; */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

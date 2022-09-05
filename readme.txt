@@ -637,6 +637,7 @@ usuarioAutenticado()
 */
 
 /*
+
 const producto1 = {
     nombre: "Aceite",
     precio: 1000,
@@ -667,23 +668,21 @@ let option = prompt(`Elija una opcion:
 `)
 switch (option) {
     case "1":
-        console.log(producto1)
+        console.log(`El producto es ${producto1.nombre} y su precio es ${producto1.precio}`)
         break;
     case "2":
-        console.log(producto2)
+        console.log(`El producto es ${producto2.nombre} y su precio es ${producto2.precio}`)
         break;
     case "3":
-        console.log(producto3)
+        console.log(`El producto es ${producto3.nombre} y su precio es ${producto3.precio}`)
         break;
     case "4":
-        console.log(producto4)
+        console.log(`El producto es ${producto4.nombre} y su precio es ${producto4.precio}`)
         break;    
     default:
         alert("No ingresaste una opcion valida")
         break;
 }
-
-*
 
 
 
